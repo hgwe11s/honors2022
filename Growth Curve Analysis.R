@@ -10,16 +10,15 @@ library(xlsx)
 
 
 #INPUT WORKING DIRECTORY
-#setwd("C:/Users/Helen/My Drive/Smith/Thesis/graphs/021922")
-setwd("C:/Users/chatt/Google Drive/Smith/Thesis/graphs/concentrations")
+setwd("C:/Directory")
 
 #INPUT FILE NAME
-data_file <- "concentrations input.xlsx"
+data_file <- "file_name.xlsx"
 
 raw_data <- read_excel(data_file) #load data
 
 #INPUT DATE/TITLE (FOR GRAPHS)
-graph_title = "3-04"
+graph_title = "mm-dd"
 
 #get vector of strain names
 strains_dupes <- raw_data$`Time (m)`
@@ -30,10 +29,10 @@ t <- t[-1:-1]
 t <- signif(t,4) #set sig figs
 
 #INPUT BLANK VALUE
-blank = 0.277681667
+blank =
 
 #INPUT NUMBER OF REPLICATES
-replicates <- 2
+replicates <- 
 
 #define average.data
 average.data <- function() {
